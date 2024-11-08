@@ -1,0 +1,10 @@
+[package]
+name = "tutorial1"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+#see keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+#toms obvius minimal language
+#cargo build
+#\tutorial1\target\debug\.\target1.exe
