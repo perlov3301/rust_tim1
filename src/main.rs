@@ -1,27 +1,32 @@
 fn main() {
     // println!("Hello, world1");
     println!("Hello, world1");
-    let  x: u32 = 4;
-    println!("x immut is {}", x); 
+    let  mut x: u32 = 4;
+    println!("muttable x  is {}", x); 
     { 
         println!("interium scope1");
-        println!("x without definition is {}", x);
         let x = 2;
-        println!("immut x is {}", x);
+        println!("let immut x is {}", x);
         println!("end of interium scope1");
     }
     {
         println!("interium scope2");
-        println!("sum of undefined x and -2");
         let x = x - 2;
-        println!("immut sum is {}", x);
+        println!("let immut sum of undeclared x and -2 is {}", x);
         println!("end of interium scope2");
 
         
     }
-    
+    {
+        println!("interium scope3");
+        println!("undeclared x is {}",x);
+        x = x +10;
+        println!(" undeclared sum x + 10 is {}",x);
+
+    }
+    println!("x after interium scopes is  {}", x);
     let x = x + 1;
-    println!("imm sum of x and 1 is {}", x);
-    let x = 8;
-    println!("x immut is {}", x);
+    println!("let imm x = of x and 1 is {}", x);
+    let x = "hello world";
+    println!("let x immut is {}(new variable>new type", x);
 }
